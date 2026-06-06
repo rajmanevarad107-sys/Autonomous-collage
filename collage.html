@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APEX COLLAGE</title>
+    <style>
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        nav {
+            background-color: #0a2540;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d4b2;
+        }
+
+        header {
+            background: linear-gradient(rgba(10, 37, 64, 0.8), rgba(10, 37, 64, 0.8)), url('https://unsplash.com') no-repeat center center/cover;
+            height: 60vh;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #00d4b2;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #00d4b2;
+            color: #0a2540;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+        }
+
+        section {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #0a2540;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #00d4b2;
+            margin: 10px auto 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid #0a2540;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #0a2540;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0a2540;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        form {
+            background: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #0a2540;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background-color: #00d4b2;
+            color: #0a2540;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">APEX COLLEGE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#autonomy">Autonomy Status</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>Empowering Minds, Shaping Futures</h1>
+        <p>An UGC Recognized Autonomous Institution</p>
+        <a href="#programs" class="btn">Explore Programs</a>
+    </header>
+
+    <section id="about">
+        <h2>About Our Institution</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
+            Founded with a vision to deliver industry-ready education, Apex College stands as a beacon of academic excellence. As an autonomous body, we design our own advanced curricula tailored to modern technological and business landscapes.
+        </p>
+    </section>
+
+    <section id="autonomy" style="background-color: #ebf1f5;">
+        <h2>The Autonomous Advantage</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Updated Curriculum</h3>
+                <p>Syllabus updated every year to match current industry demands and global technological standards.</p>
+            </div>
+            <div class="card">
+                <h3>Faster Examinations</h3>
+                <p>Independent evaluation system ensuring timely exams, fair grading, and quick declaration of results.</p>
+            </div>
+            <div class="card">
+                <h3>Skill-Centric Electives</h3>
+                <p>Choice-Based Credit System (CBCS) allowing students to take up domain-specific certification courses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <h2>Academic Programs</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stream</th>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Eligibility</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Engineering</td>
+                        <td>B.Tech Computer Science</td>
+                        <td>4 Years</td>
+                        <td>10+2 with Physics, Chemistry, Math</td>
+                    </tr>
+                    <tr>
+                        <td>Management</td>
+                        <td>BBA (Data Analytics)</td>
+                        <td>3 Years</td>
+                        <td>10+2 Any Stream</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>B.Sc Biotechnology</td>
+                        <td>3 Years</td>
+                        <td>10+2 with Biology</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: #ebf1f5;">
+        <h2>Admissions & Inquiries</h2>
+        <form action="#" method="POST" onsubmit="alert('Thank you for reaching out! We will contact you soon.'); return false;">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="course">Interested Course</label>
+                <input type="text" id="course" placeholder="e.g., B.Tech CSE">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Your query..."></textarea>
+            </div>
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </section>
+    <footer>
